@@ -50,7 +50,7 @@ inquirer
     {
       type: "prompt",
       name: "githubUser",
-      message: "What is your github profile:",
+      message: "What is your github username:",
     },
     {
       type: "prompt",
@@ -73,6 +73,7 @@ inquirer
       githubUser,
       email,
     }) => {
+      
       let licenseImage;
 
 // create link to license graphic based on what was selected
@@ -154,7 +155,7 @@ ${licenseImage}
 ### Questions
 
 >
->Github: [${githubUser}](${githubUser})
+>Github: [${githubUser}](https://www.github.com/${githubUser})
 >
 >Email: [${email}](mailto:${email})
 >
