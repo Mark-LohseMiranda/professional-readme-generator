@@ -26,9 +26,8 @@
 
 ### Usage
 
->
-> Not Deployed
->
+![Screen Shot 2021-10-13 at 6 34 56 PM](https://user-images.githubusercontent.com/83737312/137235755-f99fabf1-8ef7-4a80-ab93-ec2560f352d5.png)
+
 
 ### License
 
