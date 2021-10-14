@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+// ask questions
+
 inquirer
   .prompt([
     {
@@ -56,6 +58,9 @@ inquirer
       message: "What is your email address:",
     },
   ])
+
+// deconstruct 
+
   .then(
     ({
       projectTitle,
@@ -69,6 +74,8 @@ inquirer
       email,
     }) => {
       let licenseImage;
+
+// create link to license graphic based on what was selected
 
       switch (license) {
         case "MIT":
@@ -91,6 +98,8 @@ inquirer
           licenseImage = "";
           break;
       }
+
+// build markup
 
       const markUp = `
 
@@ -152,8 +161,10 @@ ${licenseImage}
 
 `;
 
-      fs.writeFile("README.md", markUp, (err) =>
-        err ? console.log(err) : console.log("success")
+// write file
+
+      fs.writeFile("RemoveMe-README.md", markUp, (err) =>
+        err ? console.log(err) : console.log("Your custom README is saved as RemoveMe-README.md. Please remove RemoveMe- before deploying.")
       );
     }
   );
