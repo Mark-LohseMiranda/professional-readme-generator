@@ -146,7 +146,7 @@ ${licenseImage}
 > [${contribute}](${contribute})
 >
 
-### Test Instructions
+### Tests
 
 >
 > ${tests}
